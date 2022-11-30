@@ -1,0 +1,55 @@
+package com.example.projekaplikasimobilefix;
+
+
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
+
+public class LoginActivity extends AppCompatActivity {
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    FloatingActionButton fb,google,twitter;
+
+
+    float v = 0;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        tabLayout = findViewById(R.id.tab_layout);
+        viewPager = findViewById(R.id.view_pager);
+        fb = findViewById(R.id.fab_fb);
+        google = findViewById(R.id.fab_google);
+        twitter = findViewById(R.id.fab_twitter);
+
+
+
+
+
+        tabLayout.setupWithViewPager(viewPager);
+        VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        vpAdapter.addFragment(new LoginTab(),"LOGIN");
+        vpAdapter.addFragment(new SignupTab(),"SIGNUP");
+        viewPager.setAdapter(vpAdapter);
+        fb.setTranslationY(300);
+        google.setTranslationY(300);
+        twitter.setTranslationY(300);
+        tabLayout.setTranslationY(300);
+
+
+        fb.setAlpha(v);
+        google.setAlpha(v);
+        twitter.setAlpha(v);
+        tabLayout.setAlpha(v);
+
+        fb.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(400).start();
+        google.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(600).start();
+        twitter.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(800).start();
+        tabLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
+    }
+}

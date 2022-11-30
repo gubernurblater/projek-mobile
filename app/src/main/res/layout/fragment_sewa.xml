@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sewa.sewaFragment"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/fotovinyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/vinyl"
+            android:layout_gravity="center"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/namavinyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fotovinyl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Lapangan Vinyl"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/hargavinyl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namavinyl"
+            android:layout_centerHorizontal="true"
+            android:text="Rp100.000/Jam"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"></TextView>
+
+        <Button
+            android:id="@+id/btnPesanVinyl"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hargavinyl"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/button_bg"
+            android:text="pesan"
+            android:layout_gravity="center"></Button>
+
+        <ImageView
+            android:id="@+id/fotosintetis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPesanVinyl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/sintetis"
+            android:layout_gravity="center"></ImageView>
+
+        <TextView
+            android:id="@+id/namasintetis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fotosintetis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Lapangan Sintetis"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/hargasintetis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namasintetis"
+            android:layout_centerHorizontal="true"
+            android:text="RP120.000/Jam"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"></TextView>
+
+        <Button
+            android:id="@+id/btnPesanSintetis"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hargasintetis"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/button_bg"
+            android:text="pesan"
+            android:layout_gravity="center"></Button>
+
+            <ImageView
+                android:id="@+id/fotovinyl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/vinyl"
+                android:layout_gravity="center"></ImageView>
+
+            <TextView
+                android:id="@+id/namavinyl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fotovinyl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Lapangan Vinyl"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"></TextView>
+
+            <TextView
+                android:id="@+id/hargavinyl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namavinyl"
+                android:layout_centerHorizontal="true"
+                android:text="Rp100.000/Jam"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"></TextView>
+
+            <Button
+                android:id="@+id/btnPesanVinyl2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hargavinyl"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/button_bg"
+                android:text="pesan"
+                android:layout_gravity="center"></Button>
+
+            <ImageView
+                android:id="@+id/fotosintetis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPesanVinyl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/sintetis"
+                android:layout_gravity="center"></ImageView>
+
+            <TextView
+                android:id="@+id/namasintetis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fotosintetis"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Lapangan Sintetis"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"></TextView>
+
+            <TextView
+                android:id="@+id/hargasintetis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namasintetis"
+                android:layout_centerHorizontal="true"
+                android:text="RP120.000/Jam"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"></TextView>
+
+            <Button
+                android:id="@+id/btnPesanSintetis2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hargasintetis"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/button_bg"
+                android:text="pesan"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                ></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

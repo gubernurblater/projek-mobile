@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PemesananActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/coba"
+    />
+    <TextView
+        android:id="@+id/txtpilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Pilih Waktu Bermain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/barissatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtpilih"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/satu"/>
+        <CheckBox
+            android:id="@+id/dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dua"/>
+        <CheckBox
+            android:id="@+id/tiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tiga"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/barisdua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/barissatu"
+        android:paddingLeft="25dp">
+        <CheckBox
+            android:id="@+id/empat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empat"/>
+        <CheckBox
+            android:id="@+id/lima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lima"/>
+        <CheckBox
+            android:id="@+id/enam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enam"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/baristiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/barisdua"
+        android:paddingLeft="25dp">
+        <CheckBox
+            android:id="@+id/tujuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tujuh"/>
+        <CheckBox
+            android:id="@+id/delapan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delapan"/>
+        <CheckBox
+            android:id="@+id/sembilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sembilan"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/barisempat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/baristiga"
+        android:paddingLeft="25dp">
+        <CheckBox
+            android:id="@+id/sepuluh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sepuluh"/>
+        <CheckBox
+            android:id="@+id/sebelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sebelas"/>
+        <CheckBox
+            android:id="@+id/duabelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duabelas"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnConJam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/barisempat"
+        android:text="Konfirmasi Jam"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple_200">
+    </Button>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnConJam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Detail Transaksi :"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tampil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lapangan"
+      ></TextView>
+    <TextView
+        android:id="@+id/lapangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       ></TextView>
+
+    <Button
+        android:id="@+id/btnConPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tampil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@color/purple_200"
+        android:text="Konfirmasi Pesananan"></Button>
+
+    <ImageView
+        android:id="@+id/bottomgoogle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnConPesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/google1"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/orion"
+        android:layout_below="@+id/bottomgoogle"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+
+</RelativeLayout>
